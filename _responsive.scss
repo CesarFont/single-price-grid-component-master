@@ -1,0 +1,42 @@
+@media screen and(min-width: 750px) {
+    body {
+        .container {
+            margin-top: 0;
+            width: 648px;
+            height: 55vh;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+
+            .card {
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+
+            .card:nth-child(1) {
+                grid-area: 1 / 1 / span 1 / span 2;
+            }
+
+            .card:nth-child(2) {
+                border-radius: 0 0 0 10px;
+            }
+
+            .card:nth-child(3) {
+                border-radius: 0 0 10px 0;
+            }
+
+            .card:nth-child(1) h3 {
+                font-size: 1.6rem;
+            }
+
+            .card:nth-child(1) h4 {
+                font-size: 1.3rem;
+            }
+            .card:nth-child(2) {
+                button {
+                    height: 3rem;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}

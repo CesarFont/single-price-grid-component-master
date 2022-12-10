@@ -1,0 +1,93 @@
+@import "global";
+@import "responsive";
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+.container {
+    margin-top: 2rem;
+    width: 85%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 10px;
+    background-color: white;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .card h3 {
+        font-weight: 700;
+    }
+
+    .card:nth-child(1) h3 {
+        color: $Cyan;
+    }
+
+    .card:nth-child(1) h4 {
+        color: $Bright-Yellow;
+    }
+
+    .card:nth-child(1) p {
+        line-height: 1.5rem;
+        color: $Grayish-Blue;
+    }
+
+    .card:nth-child(2) {
+        background-color: #58B4B2;
+        color: white;
+
+        .price {
+            display: flex;
+            align-items: center;
+
+            .cost {
+                height: 2rem;
+                font-size: 2rem;
+                padding-right: 1rem;
+            }
+        }
+
+        span:nth-child(2) {
+            color: $Light-Gray;
+        }
+
+        h4 {
+            font-weight: 400;
+            color: $Light-Gray;
+        }
+
+        button {
+            height: 2.5rem;
+            color: white;
+            font-weight: 700;
+            border: none;
+            background-color: $Bright-Yellow;
+            border-radius: 5px;
+            margin-top: 1rem;
+            box-shadow: 1px 2px 27px 2px rgba(0, 0, 0, 0.53);
+            -webkit-box-shadow: 1px 2px 27px 2px rgba(0, 0, 0, 0.53);
+            -moz-box-shadow: 1px 2px 27px 2px rgba(0, 0, 0, 0.53);
+        }
+
+    }
+    .card:nth-child(3) {
+        background-color: #5EBFBE;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p{
+            width: 60%;
+            color: $Light-Gray;
+        }
+    }
+
+
+}
